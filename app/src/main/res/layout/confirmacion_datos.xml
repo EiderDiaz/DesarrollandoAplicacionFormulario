@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_gral"
+    tools:context="com.luigi.formulario.ConfirmacionDatos">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_gral"
+            android:gravity="center"
+            android:text="@string/etiqueta_confirmar"
+            android:textSize="@dimen/size_titulo"
+            android:theme="@style/lbTitulo"
+            />
+        <TextView
+            android:id="@+id/nombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_texto"
+            android:text="Luis "/>
+        <TextView
+            android:id="@+id/fechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:textSize="@dimen/size_texto"
+            android:text="Fecha"/>
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:textSize="@dimen/size_texto"
+            android:text="Teléfono "/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:textSize="@dimen/size_texto"
+            android:text="Email "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textSize="@dimen/size_texto"
+                android:text="Descripción: "/>
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_texto"
+                android:text="Descripción"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/etiqueta_btn_editar"
+            android:textColor="@color/colorBlanco"
+            android:theme="@style/Boton"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

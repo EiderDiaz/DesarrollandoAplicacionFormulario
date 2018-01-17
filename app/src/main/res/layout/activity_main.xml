@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_gral"
+    tools:context="com.luigi.formulario.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_gral"
+            android:gravity="center"
+            android:text="@string/etiqueta_titulo"
+            android:textSize="@dimen/size_titulo"
+            android:theme="@style/lbTitulo"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_texto"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:hint="@string/hint_input_nombre_completo" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:text="@string/etiqueta_fecha"
+            android:textSize="@dimen/size_texto"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputFechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_texto"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:hint="@string/hint_input_fecha"
+                android:onClick="mostrarPickerFecha"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_texto"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:hint="@string/hint_input_telefono"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_texto"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/hint_input_email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintText">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_texto"
+                android:inputType="textMultiLine"
+                android:hint="@string/hint_input_descripcion"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_gral"
+            android:textColor="@color/colorBlanco"
+            android:theme="@style/Boton"
+            android:text="@string/etiqueta_btn_siguiente"
+            />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

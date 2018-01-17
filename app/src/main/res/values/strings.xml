@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="etiqueta_campo_fecha">Selecciona tu fecha de nacimiento</string>
+    <string name="etiqueta_btn_siguiente">Siguiente</string>
+    <string name="etiqueta_btn_editar">Editar datos</string>
+    <string name="etiqueta_titulo">Datos de registro</string>
+    <string name="etiqueta_confirmar">Confirmar datos</string>
+    <string name="etiqueta_fecha">Fecha de nacimiento</string>
+
+    <string name="hint_input_nombre_completo">Nombre completo</string>
+    <string name="hint_input_fecha">dd/mm/aaaa</string>
+    <string name="hint_input_telefono">Teléfono</string>
+    <string name="hint_input_email">Email</string>
+    <string name="hint_input_descripcion">Descripción contacto</string>
+</resources>
